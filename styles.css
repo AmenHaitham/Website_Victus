@@ -96,7 +96,7 @@ button {
 }
 
 button {
-    background: #28a745;
+    background: #3868ca;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -104,7 +104,7 @@ button {
 }
 
 button:hover {
-    background: #218838;
+    background: #3868ca;
     transform: translateY(-2px);
 }
 
