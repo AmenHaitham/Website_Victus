@@ -43,7 +43,7 @@ document.getElementById('fetch-accounts')?.addEventListener('click', function() 
         accountsList.innerHTML = ''; // Clear previous data
         data.forEach(account => {
             accountsList.innerHTML += `<ul class="account-info">
-    <li><span class="bold-heading">Name:</span> ${account.last_name + " " + account.first_name}</li>
+    <li><span class="bold-heading">Name:</span> ${account.first_name + " " + account.last_name}</li>
     <li><span class="bold-heading">Email:</span> ${account.email}</li>
     <li><span class="bold-heading">Phone:</span> ${account.phone_num}</li>
     <li><span class="bold-heading">Password:</span> ${account.password}</li>
