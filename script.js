@@ -170,7 +170,7 @@ document.getElementById('fetch-sellers')?.addEventListener('click', function() {
         const sellersList = document.getElementById('sellers-list');
         sellersList.innerHTML = ''; // Clear previous data
         data.forEach(seller => {
-            sellersList.innerHTML += `<p>Seller Name: ${seller.seller_name}, Email: ${seller.email}</p>`;
+            sellersList.innerHTML += `<ul class="seller-info"><li><li><span class="bold-heading">Full Name:</span>${seller.last_name+" "+seller.first_name}</li> <li><span class="bold-heading">Seller Name:</span> ${seller.seller_name}</li><li><span class="bold-heading">Email:</span> ${seller.email}</ul>`;
         });
     })
     .catch(error => {
