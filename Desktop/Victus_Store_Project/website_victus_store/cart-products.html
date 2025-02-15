@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Cart Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Cart Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accounts.html">Accounts</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="carts.html">Carts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Create Cart Product -->
+        <section id="create-cart-product">
+            <h2>Create Cart Product</h2>
+            <form id="cart-product-form">
+                <input type="number" id="cart_product_id" placeholder="Product ID" required>
+                <input type="number" id="cart_id" placeholder="Cart ID" required>
+                <input type="number" id="order_id" placeholder="Order ID" required>
+                <button type="submit">Create Cart Product</button>
+            </form>
+            <div id="cart-product-message"></div>
+        </section>
+
+        <!-- View Cart Products -->
+        <section id="view-cart-products">
+            <h2>View Cart Products</h2>
+            <button id="fetch-cart-products">Fetch Cart Products</button>
+            <div id="cart-products-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
