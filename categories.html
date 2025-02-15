@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Categories</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accounts.html">Accounts</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="carts.html">Carts</a></li>
+                <li><a href="cart-products.html">Cart Products</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Create Category -->
+        <section id="create-category">
+            <h2>Create Category</h2>
+            <form id="category-form">
+                <input type="text" id="category_name" placeholder="Category Name" required>
+                <input type="text" id="category_image" placeholder="Category Image URL" required>
+                <button type="submit">Create Category</button>
+            </form>
+            <div id="category-message"></div>
+        </section>
+
+        <!-- View Categories -->
+        <section id="view-categories">
+            <h2>View Categories</h2>
+            <button id="fetch-categories">Fetch Categories</button>
+            <div id="categories-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
