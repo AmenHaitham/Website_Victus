@@ -26,6 +26,12 @@ li {
     margin-bottom:10px ;
 }
 
+.seller-info{
+    border: 2px solid ; /* Set the border width and make it transparent */
+    padding: 20px; /* Add some padding inside the container */
+    border-radius: 15px; /* Add border radius for rounded corners */
+}
+
 .account-info {
     border: 2px solid ; /* Set the border width and make it transparent */
     padding: 20px; /* Add some padding inside the container */
